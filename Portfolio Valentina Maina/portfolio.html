@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Valentina Maina Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <h1>Valentina Maina Design</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        
+
+        <h2>¡Hola! Mi nombre es Valentina Maina</h2>
+        <div class="bio">
+        
+            <p>Tengo 23 años, soy de Montevideo (Uruguay) y soy estudiante de la Licenciatura de Diseño Gráfico, actualmente cursando segundo año en la Universidad de la Empresa.
+            El diseño es un rubro que me apasiona y del cual espero poder trabajar a lo largo de mi vida, realizando proyectos creativos, con personalidad y que reflejen al 100% la identidad y esencia del cliente.</p>
+          
+            <img src="fotoyo.jpg" alt="Valentina Maina">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="papeleria.png" alt="Servicio 1">
+                <p>Diseño de branding</p>
+            </div>
+            <div class="servicio">
+                <img src="vectorial.png" alt="Servicio 2">
+                <p>Diseño web</p>
+            </div>
+            <div class="servicio">
+                <img src="photoshop.png" alt="Servicio 3">
+                <p>Diseño editorial</p>
+            </div>
+        </div>
+    </section>
+
+   </section>
+
+   <section id="portafolio" class="section">
+    <h2>Portafolio</h2>
+    
+    <div class="gallery">
+    <!-- Imagen 1 -->
+    <div class="gallery-item">
+        <img src="imagen1.jpg" alt="Proyecto 1" onclick="openModal('modal1')">
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="gallery-item">
+        <img src="imagen2.jpg" alt="Proyecto 2" onclick="openModal('modal2')">
+    </div>
+
+    <!-- Imagen 3 -->
+    <div class="gallery-item">
+        <img src="imagen3.jpg" alt="Proyecto 3" onclick="openModal('modal3')">
+    </div>
+
+    <!-- Imagen 4 -->
+    <div class="gallery-item">
+        <img src="imagen4.jpg" alt="Proyecto 4" onclick="openModal('modal4')">
+    </div>
+
+    <!-- Imagen 5 -->
+    <div class="gallery-item">
+        <img src="imagen5.jpg" alt="Proyecto 5" onclick="openModal('modal5')">
+    </div>
+
+</div>
+
+
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal para Imagen 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <p class="gallery-text">PROYECTO 1</p>
+        <img src="imagen1.jpg" alt="Detalle del Proyecto 1" class="modal-image">
+        <p>Descripción detallada del Proyecto 1.</p>
+        <p>(Esta imagen no es de mi autoría)</p>
+    </div>
+</div>
+
+<!-- Modal para Imagen 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <p class="gallery-text">PROYECTO 2</p>
+        <img src="imagen2.jpg" alt="Detalle del Proyecto 2" class="modal-image">
+        <p>Descripción detallada del Proyecto 2.</p>
+        <p>(Esta imagen no es de mi autoría)</p>
+    </div>
+</div>
+
+<!-- Modal para Imagen 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <p class="gallery-text">PROYECTO 3</p>
+        <img src="imagen3.jpg" alt="Detalle del Proyecto 3" class="modal-image">
+        <p>Descripción detallada del Proyecto 3.</p>
+        <p>(Esta imagen no es de mi autoría)</p>
+    </div>
+</div>
+
+<!-- Modal para Imagen 4 -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <p class="gallery-text">PROYECTO 4</p>
+        <img src="imagen4.jpg" alt="Detalle del Proyecto 4" class="modal-image">
+        <p>Descripción detallada del Proyecto 4.</p>
+        <p>(Esta imagen no es de mi autoría)</p>
+    </div>
+</div>
+
+<!-- Modal para Imagen 5 -->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <p class="gallery-text">PROYECTO 5</p>
+        <img src="imagen5.jpg" alt="Detalle del Proyecto 5" class="modal-image">
+        <p>Descripción detallada del Proyecto 5.</p>
+        <p>(Esta imagen no es de mi autoría)</p>
+    </div>
+</div>
+
+
+
+
+<!-- END MAIN -->
+</div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <label for="consulta">Consultas:</label>
+            <textarea id="consulta" name="consulta"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Valentina Maina, Diseñadora Gráfica - Montevideo, Uruguay.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Botón de Scroll to Top -->
+    <button id="scroll-top-btn" onclick="scrollToTop()">Top</button>
+
+    <script type="text/javascript">
+        // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+/* estilos */
+
+html {
+            scroll-behavior: smooth;
+
+            }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FDF5EF;
+    color: #333;
+    text-align: left;
+}
+
+header {
+    background-color: #FBF3F0;
+    text-align: center;
+    padding: 0px;
+
+}
+
+header h1 {
+    color: #7C9082;
+    font-size: 2rem;
+    font-family: "Galada", cursive;
+    height: 80px;
+    padding-top: 10px
+}
+
+h2{
+    font-family: "Galada", cursive;
+
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #F5BC9E;
+    text-align: left;
+    width:100%;
+     
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #7C9082;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Overlock", sans-serif;
+    
+
+}
+
+section {
+    padding: 60px;
+    text-align: left;
+    margin-top: 0;
+    background-color: #F7E1D4;
+}
+
+#sobre-mi {
+    background-color: #B3CEB4;
+    color: white;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio img {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+#servicios {
+    background-color: #F5BC9E;
+    text-align: center;
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.servicio {
+    text-align: center;
+    max-width: 200px;
+
+}
+
+.servicio:hover,  a:hover {
+  background-color: #B3CEB4;
+}
+
+
+.servicio img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+.portafolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#contacto {
+    background-color: #B3CEB4;
+      text-align: center;
+      font-family: "Overlock", sans-serif;
+    font-weight: 700;
+      color: #FFFFFF;
+
+}
+
+/* Modal para detalles del proyecto*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content img {
+    margin-bottom: 15px;
+}
+
+/* Animación de texto */
+.about-text {
+    animation: slideIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+.gallery-item img {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.gallery-item img {
+    width: 250px;  
+    height: 250px; 
+    object-fit: cover; 
+    margin: 0px;  
+    cursor: pointer;  
+    align-items: center;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+button:hover {
+    animation: shake 0.3s ease;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #F2C5A0;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #FDF5EF;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: #7C9082;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fcf8e4;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 285px;
+
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .portafolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+
+.portafolio {
+    background-color: #F2C5A0;
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    color: #A0C0A9;
+ 
+
+}
+
+#portafolio h2 {
+    text-align: center;
+        color: #A0C0A9;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 20px; /* Añade un espacio entre las imágenes */
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 250px;
+    height: 250px;
+    background-color: #F7E1D4;
+}
+
+.gallery-item img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el espacio disponible */
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+/*------------estilos del go to top button------------*/
+
+        #myBtn {
+              display: none; /* Hidden by default */
+              position: fixed; /* Fixed/sticky position */
+              bottom: 20px; /* Place the button at the bottom of the page */
+              right: 30px; /* Place the button 30px from the right */
+              z-index: 99; /* Make sure it does not overlap */
+              border: none; /* Remove borders */
+              outline: none; /* Remove outline */
+              background-color: #A0C0A9; /* Set a background color */
+              color: white; /* Text color */
+              cursor: pointer; /* Add a mouse pointer on hover */
+              padding: 15px; /* Some padding */
+              border-radius: 10px; /* Rounded corners */
+              font-size: 18px; /* Increase font size */
+            }
+
+            #myBtn:hover {
+              background-color: #555; /* Add a dark-grey background on hover */
+            }
+
